@@ -1,0 +1,21 @@
+@import './styles/variables';
+@import './styles/buttons';
+
+.app {
+  display: grid;
+  grid-template-rows: 50px 1fr 50px;
+  background-color: $color-background;
+  .body {
+    max-height: 100%;
+    overflow: auto;
+  }
+}
+
+input {
+  background-color: transparent;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  border-bottom: 1px solid $color-divider;
+  box-shadow: none;
+}

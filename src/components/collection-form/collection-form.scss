@@ -1,0 +1,10 @@
+@import '../../styles/variables';
+
+.collection-form {
+  padding: 10px;
+  display: grid;
+  grid-row-gap: 10px;
+  .loading-button {
+    justify-self: center;
+  }
+}

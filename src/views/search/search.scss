@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+
+.search {
+  padding: 10px;
+  padding-bottom: 50px;
+  > i {
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    background-color: $color-accent;
+    border-radius: 50%;
+    color: $color-text-icon;
+    padding: 10px;
+    box-shadow: $shadow;
+  }
+}

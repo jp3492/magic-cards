@@ -1,0 +1,30 @@
+@import '../../styles//variables';
+
+.modal {
+  z-index: 2;
+  .backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $color-divider;
+    opacity: 0.3;
+  }
+  .content-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    place-content: center;
+    .content {
+      box-shadow: $shadow;
+      background-color: $color-text-icon;
+      max-height: 80vh;
+      width: 90vw;
+      overflow: auto;
+    }
+  }
+}

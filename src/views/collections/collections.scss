@@ -1,0 +1,30 @@
+@import '../../styles/variables';
+
+.collections {
+  position: relative;
+  padding-bottom: 60px;
+  > ul {
+    > li {
+      display: grid;
+      grid-template-columns: 1fr max-content;
+      padding: 10px;
+      background-color: $color-text-icon;
+      margin-bottom: 2px;
+      cursor: pointer;
+      color: $color-text-secondary;
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+  > i {
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    background-color: $color-accent;
+    border-radius: 50%;
+    color: $color-text-icon;
+    padding: 10px;
+    box-shadow: $shadow;
+  }
+} 

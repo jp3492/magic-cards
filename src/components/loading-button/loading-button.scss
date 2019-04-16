@@ -1,0 +1,23 @@
+.loading-button{
+  button{
+    position: relative;
+    margin: 0px !important;
+    overflow: hidden;
+  }
+
+  &.loading-button--loading{
+    svg{
+      transform: translate(-50%, 0%);
+      transition: all 0.3s;
+    }
+  }
+
+  svg{
+    width: 75px;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    transition: all 0.3s;
+  }
+}

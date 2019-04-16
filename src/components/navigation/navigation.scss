@@ -1,0 +1,36 @@
+@import '../../styles/variables';
+
+.navigation {
+  z-index: 1;
+  background-color: $color-main;
+  position: relative;
+  box-shadow: $shadow;
+  > span {
+    position: absolute;
+    background-color: $color-main-dark;
+    transition: left 0.3s $speed-decelerate;
+    width: calc(100% / 3);
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  > ul {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    > li {
+      display: grid;
+      place-content: stretch;
+      > a {
+        display: grid;
+        place-content: center;
+        > i {
+          color: $color-text-icon;
+        }
+      }
+    }
+  }
+}

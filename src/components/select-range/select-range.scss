@@ -1,0 +1,9 @@
+.select-range {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: max-content;
+  grid-column-gap: 20px;
+  label {
+    grid-column: 1 / 3;
+  }
+}

@@ -1,0 +1,42 @@
+@import "./variables";
+
+.button {
+  display: grid;
+  place-content: center;
+  padding: 0 35px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: $color-accent;
+  outline: none;
+  border: none;
+  color: $color-text-icon;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  &:hover {
+    background-color: $color-main-dark;
+  }
+  &:disabled {
+    background-color: $color-divider;
+    cursor: auto;
+  }
+  // &:active {
+  //   background-color: map_get($colors, gold);
+  // }
+  // &--inverse {
+  //   cursor: pointer;
+  //   background-color: transparent;
+  //   color: map_get($colors, gold);
+  //   &:hover {
+  //     background-color: transparent;
+  //   }
+  //   &:disabled {
+  //     background-color: transparent;
+  //   }
+  //   &:active {
+  //     background-color: transparent;
+  //   }
+  // }
+}
